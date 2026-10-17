@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Button chura liya maine! 🙈",
     "No option not allowed for my queen! 🥰",
     "Itni asaani se chhutti nahi milegi mister! 🌹",
-    "Please na baby, ek baar 'Haan' click kar do 🥺❤️",
+    "Please na Yaar, ek baar 'Haan' click kar do 🥺❤️",
     "Haan wala button kitna pyara lag raha hai na? 👉👈",
     "Dekho main ro dunga ab sach me... 😭",
     "Maaf kar do na jaan, promise aisi galti nahi hogi!"
