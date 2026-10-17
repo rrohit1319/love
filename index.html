@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I am Really Sorry Madam Ji ❤️ | A Special Message For You</title>
+  <meta name="description" content="A special, romantic and heartfelt apology created with love just for you. Please forgive me!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating romantic background hearts canvas -->
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- Audio control button -->
+  <div class="audio-control-wrapper">
+    <button id="musicToggleBtn" class="audio-btn" title="Toggle romantic melody">
+      <span class="music-icon">🎵</span>
+      <span class="music-text">Romantic Melody: <b id="musicStatus">Play</b></span>
+    </button>
+  </div>
+  <audio id="bgAudio" loop preload="auto">
+    <source src="romantic-melody.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="main-container">
+    
+    <!-- STEP 1: Hero Welcome Screen -->
+    <section id="step-intro" class="card active">
+      <div class="badge-tag">💌 Strictly For My Favorite Girl</div>
+      <div class="cute-avatar-container">
+        <div class="avatar-heart-pulse">🥺</div>
+      </div>
+      <h1 class="main-heading">
+        Hey <span class="highlight-name" id="herNameDisplay" title="Click to customize nickname">Madam Ji</span> <span id="editNameBtn" class="edit-name-icon" title="Change nickname">✏️</span>
+      </h1>
+      <p class="subtitle">
+        I know I messed up... and honestly, meri poori duniya be-rang lag rahi hai jabse tum naraaz ho.
+      </p>
+
+      <div class="letter-preview-box">
+        <p>
+          "Galti meri thi, par dil sirf tumhara hai...<br>
+          Kya tum mujhe 2 minute de sakti ho apna gussa thoda sa pighlaane ke liye?"
+        </p>
+      </div>
+
+      <div class="btn-group">
+        <button id="startJourneyBtn" class="btn btn-primary pulse-btn">
+          <span>Haan, suno meri baat</span>
+          <span class="btn-icon">👉❤️</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- STEP 2: Romantic Shayari & Sincere Apology -->
+    <section id="step-shayari" class="card">
+      <div class="step-indicator">Paigham-e-Ishq • 1 of 3</div>
+      
+      <div class="shayari-scroll-card">
+        <div class="scroll-pin">✨ Mere Dil Ki Baat ✨</div>
+        <div class="shayari-content">
+          <p class="shayari-line">❝ Gussa tera laazmi hai, par dil mera bebas hai,</p>
+          <p class="shayari-line">Tujhe khone ke khayal se hi, rooh meri kaanpti hai...</p>
+          <p class="shayari-line highlight-verse">Galti meri thi, sazaa jo chahe de do,</p>
+          <p class="shayari-line">Bas ek pyaari si muskaan dekar, mujhe maaf kar do! ❞</p>
+        </div>
+        <div class="shayari-author">— Sirf Tumhara, Rohit ❤️</div>
+      </div>
+
+      <div class="cute-message-box">
+        <p>
+          Sach me baby, I didn't mean to hurt you at all. Tumhari smile meri sabse favourite cheez hai puri duniya me.
+          Aur jab tum udaas hoti ho, toh mera kahin mann nahi lagta.
+        </p>
+      </div>
+
+      <div class="btn-group">
+        <button id="toQuizBtn" class="btn btn-primary">
+          <span>Chalo, kuch puchhta hoon tumse...</span>
+          <span class="btn-icon">🤔💭</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- STEP 3: Interactive Flirty & Romantic Quiz -->
+    <section id="step-quiz" class="card">
+      <div class="step-indicator">Thoda Pyaar, Thodi Masti • 2 of 3</div>
+      <h2 class="section-title">The "Gussa Meter" Test 🩺</h2>
+      <p class="quiz-instruction">Sach sach batana, cheating bilkul mana hai!</p>
+
+      <!-- Question 1 -->
+      <div class="quiz-step active" id="quiz-q1">
+        <div class="quiz-question-badge">Sawaal No. 1</div>
+        <h3 class="quiz-question">Sach sach batao, abhi kitna percent gussa ho mujhpe? 😤</h3>
+        <div class="quiz-options">
+          <button class="quiz-option" data-reaction="Awww... itna kam? Thank god jaan me jaan aayi! 🥹❤️">
+            <span class="opt-emoji">🤏</span>
+            <span class="opt-text">Bas 0.1% (Thoda sa drama karna banta hai)</span>
+          </button>
+          <button class="quiz-option" data-reaction="Hahaha! Pakka, 50 uth-baith done! Bas tum muskura do! 🫡💕">
+            <span class="opt-emoji">🏋️‍♀️</span>
+            <span class="opt-text">Itna ki kaan pakad ke uth-baith karwaungi!</span>
+          </button>
+          <button class="quiz-option" data-reaction="Toh phir wait kiska hai? Abhi aake sabse tight hug deta hoon! 🫂✨">
+            <span class="opt-emoji">🫂</span>
+            <span class="opt-text">Gussa toh hai, par ek tight hug se theek ho jayega</span>
+          </button>
+          <button class="quiz-option" data-reaction="Challenge accepted madam! Main mna kar hi rahunga! 💪🌹">
+            <span class="opt-emoji">🌋</span>
+            <span class="opt-text">100% gussa! Aur butter lagana padega!</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="quiz-step" id="quiz-q2">
+        <div class="quiz-question-badge">Sawaal No. 2</div>
+        <h3 class="quiz-question">Agar main abhi tumhare saamne aa jau aur aankhon me dekh kar "Sorry" bolu toh? 🥺</h3>
+        <div class="quiz-options">
+          <button class="quiz-option" data-reaction="Tumhari smile dekhne ke liye main kuch bhi kar sakta hoon! 😍">
+            <span class="opt-emoji">🤭</span>
+            <span class="opt-text">Shayad meri hasi choot jaye aur gussa gayab</span>
+          </button>
+          <button class="quiz-option" data-reaction="Ouchh! Thoda slowly maarna, dil bohot sensitive hai tumhare liye 🙈">
+            <span class="opt-emoji">👊</span>
+            <span class="opt-text">Pehle ek halka sa ghoosa padega, phir maaf karungi</span>
+          </button>
+          <button class="quiz-option" data-reaction="Bas yahi sunna tha! You are my cutest favorite person ever! 🥰">
+            <span class="opt-emoji">🥰</span>
+            <span class="opt-text">Main tumhari cute shakal dekh kar melt ho jaungi</span>
+          </button>
+          <button class="quiz-option" data-reaction="Treat toh aisi dunga jo tum kabhi nahi bhoologi, pakka promise! 🍕🍫">
+            <span class="opt-emoji">🍧</span>
+            <span class="opt-text">Sirf shakal se kaam nahi chalega, badi treat chahiye!</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Question 3: The Runaway Trap Question -->
+      <div class="quiz-step" id="quiz-q3">
+        <div class="quiz-question-badge">Aakhri Faisla ❤️</div>
+        <h3 class="quiz-question">Toh ab bolo... kya tum apne iss pagal ladke ko maaf karogi?</h3>
+        <p class="escape-hint">P.S. Dhyaan se sochna, dil ka mamla hai 😉</p>
+
+        <div class="action-buttons-trap" id="trapContainer">
+          <button id="forgiveYesBtn" class="btn btn-yes">
+            <span>Haan, maaf kiya meri jaan! ❤️</span>
+          </button>
+          <button id="forgiveNoBtn" class="btn btn-no">
+            <span>Nahi, bilkul nahi 😤</span>
+          </button>
+        </div>
+        <div id="runawayFeedback" class="runaway-alert"></div>
+      </div>
+
+      <!-- Live Quiz Feedback Toast -->
+      <div id="quizToast" class="quiz-toast"></div>
+    </section>
+
+    <!-- STEP 4: The Grand Gift Reveal & Promise Box -->
+    <section id="step-gift" class="card">
+      <div class="step-indicator">Surprise For You • Final Step</div>
+      
+      <div class="gift-celebration-header">
+        <span class="celebration-emoji">🎉✨</span>
+        <h2 class="grand-title">Yaaay! She Said YES! 💖</h2>
+        <p class="grand-subtitle">Tumhare bina meri smile bilkul incomplete thi.</p>
+      </div>
+
+      <!-- Interactive 3D Gift Box -->
+      <div class="interactive-box-wrapper" id="giftBoxContainer">
+        <div class="gift-box" id="animatedGiftBox" title="Tap to Open Your Surprise!">
+          <div class="gift-ribbon"></div>
+          <div class="gift-bow">🎀</div>
+          <div class="gift-box-base">
+            <div class="gift-box-text">TAP TO UNWRAP 🎁</div>
+          </div>
+        </div>
+        <div class="gift-instruction" id="giftHint">👆 Tap karo gift kholne ke liye!</div>
+      </div>
+
+      <!-- Golden Ticket & Physical Gift Voucher (Revealed after unwrap) -->
+      <div id="revealedGiftArea" class="revealed-gift-area hidden">
+        <div class="golden-ticket">
+          <div class="ticket-header">
+            <div class="ticket-badge">VIP FORGIVENESS PASS</div>
+            <div class="ticket-brand">Rohit's Heart & Soul Co. 💌</div>
+          </div>
+          
+          <div class="ticket-body">
+            <h3 class="ticket-headline">Special Gift Awaiting For You! 🎁</h3>
+            <p class="ticket-desc">
+              Yeh digital sorry toh sirf ek shuruat hai Madam Ji...
+              <strong>Tumhara asli physical surprise gift</strong> main bohot jald apne haathon se tumhe dunga!
+            </p>
+            
+            <div class="perks-grid">
+              <div class="perk-item">
+                <span class="perk-icon">🎁</span>
+                <span class="perk-title">Physical Mystery Gift</span>
+                <span class="perk-sub">Specially for you, personally delivered</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-icon">🍫</span>
+                <span class="perk-title">Favorite Treat</span>
+                <span class="perk-sub">Chocolates / Favorite Snacks guaranteed</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-icon">🌙</span>
+                <span class="perk-title">Date Night of Your Choice</span>
+                <span class="perk-sub">Tum jo kahogi, jahan kahogi!</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-icon">👑</span>
+                <span class="perk-title">VIP Nakhre Pass</span>
+                <span class="perk-sub">Aapke saare nakhre aur demand sar-aankhon par, hamesha!</span>
+              </div>
+            </div>
+
+            <div class="personal-promise-card">
+              <p class="promise-quote">
+                "I promise to always value your smile over my ego, listen to your smallest complaints, and love you a little more every single day."
+              </p>
+              <span class="promise-sign">— With Endless Love, Rohit 🌹</span>
+            </div>
+          </div>
+
+          <div class="ticket-footer">
+            <div class="barcode">||||| |||| || ||||||| ||| |||||</div>
+            <div class="validity">VALIDITY: FOREVER & EVER ❤️</div>
+          </div>
+        </div>
+
+        <!-- WhatsApp Share / Send Message Button -->
+        <div class="action-footer">
+          <button id="sendWhatsAppMsgBtn" class="btn btn-whatsapp">
+            <span>Send Forgiveness & Claim Gift on WhatsApp 💬</span>
+          </button>
+          <button id="replayExperienceBtn" class="btn btn-secondary">
+            <span>Replay This Cute Journey 🔄</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-note">
+    Made with pure love & a whole lot of regret 🥺 by Rohit for his Queen 👑
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
